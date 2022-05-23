@@ -1,14 +1,17 @@
 package javaBeans;
 
-import java.time.LocalDate;
+import java.sql.Date;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 
 public class InfoVO {
 
 	String id;
 	String passwd;
 	String name;
-	LocalDate birth;
+	Date birth;
 	String email;
+	
 	public String getId() {
 		return id;
 	}
@@ -27,11 +30,16 @@ public class InfoVO {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public LocalDate getBirth() {
+	public Date getBirth() {
 		return birth;
 	}
-	public void setBirth(LocalDate birth) {
-		this.birth = birth;
+	public void setBirth(String birth) {
+		SimpleDateFormat fm = new SimpleDateFormat("yyyy/MM/dd");
+		try {
+			this.birth = (Date) fm.parse(birth);
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
 	}
 	public String getEmail() {
 		return email;

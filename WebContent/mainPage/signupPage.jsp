@@ -11,7 +11,7 @@
 </head>
 <body>
 	<div id="signForm">
-		<form action="loginPage.jsp" method="post">
+		<form method="post" action="signupCheck.jsp" name="regForm">
 			<fieldset  class="signForm_class">
 				<legend> 회원가입 </legend>
 				아이디 <br>
@@ -20,11 +20,11 @@
 				비밀번호 <br> <input type="password" name="passwd" /> <br><br>
 				비밀번호 확인 <br> <input type="password" name="passwdcheck" /> <br><br>
 				이름 <br> <input type="text" name="name" /> <br><br>
-				생년월일 <br> <input type="text" name="birth" /> <br><br>
+				생년월일 <br> <input type="date" name="birth" /> <br><br>
 				이메일 <br> <input type="email" name="email" /> <br><br>		
 				<br>
  				<input type="reset" value="초기화" />
-				<input type="submit" value="회원가입" />		
+				<input type="button" value="회원가입" onClick="inputCheck()"/>		
 			</fieldset>
 		</form>
 	</div>
