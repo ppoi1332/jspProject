@@ -15,7 +15,7 @@ public final class ConnectionPool {
     private ArrayList<Connection> free;
     private ArrayList<Connection> used;
     private String url = "jdbc:oracle:thin:@localhost:1521:xe";
-    private String user = "c##jsptest";
+    private String user = "c##survey";
     private String password = "1234";
     private int initCons = 10;
     private int maxCons = 20;
