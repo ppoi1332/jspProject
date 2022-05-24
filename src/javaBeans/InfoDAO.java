@@ -88,4 +88,44 @@ public class InfoDAO {
 		}
 		return bool;
 	}
+	
+	public int loginCheck(String id, String passwd) {
+		int check = -1;
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		String sql = "select  \"PASSWD\" from \"INFO\" where \"ID\"=?";
+		ResultSet rs = null;
+		try {
+			conn = pool.getConnection();
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, id);
+			rs = pstmt.executeQuery();
+			if (rs.next()) {
+				String dbPass = rs.getString("passwd");
+				if (passwd.equals(dbPass)) check = 1;
+				else check = 0;
+			}
+						
+		} catch(Exception e) {
+			System.out.println("Exception : " + e);
+		} finally {
+			if (rs != null) {
+				try {
+					rs.close();
+				} catch(SQLException e) {}
+			}
+			if (conn != null) {
+				try {
+					pool.releaseConnection(conn);
+				}catch (SQLException e) {}
+			}
+			if (pstmt != null) {
+				try {
+					pstmt.close();
+				} catch (SQLException e) {}
+			}
+		}
+		return check;
+		
+	}
 }

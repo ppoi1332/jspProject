@@ -69,5 +69,8 @@ function inputCheck() {
 		return;
 	}
 	document.regForm.submit();
-	
 }
+
+
+
+	

@@ -9,7 +9,7 @@ public class InfoVO {
 	String id;
 	String passwd;
 	String name;
-	Date birth;
+	String birth;
 	String email;
 	
 	public String getId() {
@@ -30,16 +30,11 @@ public class InfoVO {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public Date getBirth() {
+	public String getBirth() {
 		return birth;
 	}
 	public void setBirth(String birth) {
-		SimpleDateFormat fm = new SimpleDateFormat("yyyy/MM/dd");
-		try {
-			this.birth = (Date) fm.parse(birth);
-		} catch (ParseException e) {
-			e.printStackTrace();
-		}
+		this.birth = birth;
 	}
 	public String getEmail() {
 		return email;

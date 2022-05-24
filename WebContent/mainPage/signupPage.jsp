@@ -24,7 +24,8 @@
 				이메일 <br> <input type="email" name="email" /> <br><br>		
 				<br>
  				<input type="reset" value="초기화" />
-				<input type="button" value="회원가입" onClick="inputCheck()"/>		
+				<input type="button" value="회원가입" onClick="inputCheck()"/>	
+				<button type="button" onclick="location.href='main_Include.jsp'">&nbsp홈&nbsp </button>	
 			</fieldset>
 		</form>
 	</div>
