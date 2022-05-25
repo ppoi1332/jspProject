@@ -71,6 +71,9 @@ function inputCheck() {
 	document.regForm.submit();
 }
 
+function loginCheck() {
+	alert("로그인해주세요");
+}
 
 
 	

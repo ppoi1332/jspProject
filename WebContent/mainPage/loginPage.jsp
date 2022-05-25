@@ -15,9 +15,9 @@
 				<legend> 로그인 </legend>
 				아이디   <br> <input type="text" name="id_login" /><br>
 				비밀번호	<br> <input type="password" name="passwd_login" /> <br><br>
-				<input type="submit" value="로그인">
-				<button type="button" onclick="location.href='signupPage.jsp'">회원가입 </button>	
-				<button type="button" onclick="location.href='main_Include.jsp'">&nbsp홈&nbsp </button>		
+				<input type="submit" class="btn_login btn_login_outline" value="로그인">
+				<button type="button" class="btn_login btn_login_outline" onclick="location.href='signupPage.jsp'">회원가입 </button>	
+				<button type="button" class="btn_login btn_login_outline" onclick="location.href='main_Include.jsp'">&nbsp홈&nbsp </button>		
 			</fieldset>
 		</form>
 	</div>

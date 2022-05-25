@@ -10,7 +10,7 @@
 </head>
 <body>
 <div id = ser_top>
-<h1>설문조사</h1>
+<h1><a href="main_Include.jsp">HOME</a></h1>
 <hr color="gray" /> 
 </div>
 <div id = ser_mid>
@@ -47,8 +47,8 @@
 		</li></h3>
 	</ul><br>
 	&nbsp&nbsp&nbsp&nbsp&nbsp
-	<input type="submit" value="입력완료"/>
-	<input type="reset" value="초기화" />
+	<input type="submit" class="btn_login btn_login_outline" value="입력완료"/>
+	<input type="reset" class="btn_login btn_login_outline" value="초기화" />
 	</form>
 	
 </div>

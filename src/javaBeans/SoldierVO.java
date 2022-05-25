@@ -11,6 +11,9 @@ public class SoldierVO {
 	String in_day;
 	String out_day;
 	long year_code;
+	String division;
+	String position;
+	String year;
 	
 	public SoldierVO(String id, long division_code, long position_code, String in_day, String out_day, long year_code) {
 		this.id = id;
@@ -21,6 +24,39 @@ public class SoldierVO {
 		this.year_code = year_code;	
 	}
 	
+	public SoldierVO(String id, String division, String position, String in_day, String out_day, String year) {
+		this.id = id;
+		this.division = division;
+		this.position = position;
+		this.in_day = in_day;
+		this.out_day = out_day;
+		this.year = year;	
+	}
+	
+	public String getDivision() {
+		return division;
+	}
+
+	public void setDivision(String division) {
+		this.division = division;
+	}
+
+	public String getPosition() {
+		return position;
+	}
+
+	public void setPosition(String position) {
+		this.position = position;
+	}
+
+	public String getYear() {
+		return year;
+	}
+
+	public void setYear(String year) {
+		this.year = year;
+	}
+
 	public long getNumber() {
 		return number;
 	}
@@ -63,4 +99,9 @@ public class SoldierVO {
 	public void setYear_code(long year_code) {
 		this.year_code = year_code;
 	}	
+	
+	@Override
+	public String toString() {
+		return  id + in_day + out_day + division + position + year ;
+	}
 }

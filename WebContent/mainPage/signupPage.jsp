@@ -16,16 +16,16 @@
 				<legend> 회원가입 </legend>
 				아이디 <br>
 				<input type="text" name="id" />
-				<input type="button" value="중복확인" onClick="idCheck(this.form.id.value)"/><br><br>
+				<input type="button" class="btn_login btn_login_outline" value="중복확인" onClick="idCheck(this.form.id.value)"/><br><br>
 				비밀번호 <br> <input type="password" name="passwd" /> <br><br>
 				비밀번호 확인 <br> <input type="password" name="passwdcheck" /> <br><br>
 				이름 <br> <input type="text" name="name" /> <br><br>
 				생년월일 <br> <input type="date" name="birth" /> <br><br>
 				이메일 <br> <input type="email" name="email" /> <br><br>		
 				<br>
- 				<input type="reset" value="초기화" />
-				<input type="button" value="회원가입" onClick="inputCheck()"/>	
-				<button type="button" onclick="location.href='main_Include.jsp'">&nbsp홈&nbsp </button>	
+ 				<input type="reset"  class="btn_login btn_login_outline" value="초기화" />
+				<input type="button" class="btn_login btn_login_outline" value="회원가입" onClick="inputCheck()"/>	
+				<button type="button"  class="btn_login btn_login_outline" onclick="location.href='main_Include.jsp'">&nbsp홈&nbsp</button>	
 			</fieldset>
 		</form>
 	</div>

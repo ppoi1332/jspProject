@@ -9,4 +9,7 @@
 </head>
 <body>
 	<div id="main_top">
+		<div id="main_dec">
+			<br><br><h1><i>HOME</i></h1>
+		</div>
 	</div>
