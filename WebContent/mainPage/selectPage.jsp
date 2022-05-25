@@ -28,7 +28,7 @@
 <script src="script.js"></script>
 </head>
 <body onload="autoIncrement();'">
-<div id = in_top>
+<div id = ser_top>
 	<h1><a href="main_Include.jsp">HOME</a></h1>
 	<hr color="gray" /> 
 <div id="survaySelect">
