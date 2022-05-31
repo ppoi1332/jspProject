@@ -5,12 +5,12 @@
 <head>
 <meta charset="UTF-8">
 <title>설문 조사</title>
-<link href="../css/myStyle.css" rel="stylesheet" type="text/css">
-<script src="script.js"></script>
+<link href="../../css/myStyle.css" rel="stylesheet" type="text/css">
+<script src="../script.js"></script>
 </head>
 <body>
 <div id = ser_top>
-<h1><a href="main_Include.jsp">HOME</a></h1>
+<h1><a href="../main/main_Include.jsp">HOME</a></h1>
 <hr color="gray" /> 
 </div>
 <div id = ser_mid>
@@ -33,7 +33,7 @@
 			<input type="radio" name="position" value=3>운전병
 			<input type="radio" name="position" value=4>의무병
 			<input type="radio" name="position" value=5>취사병
-			<input type="radio" name="position" value=6>기타						
+			<input type="radio" name="position" value=6>기타			
 		</li></h3><br>
 		<li> <h3>예비군 년차 선택 
 			<h4>

@@ -10,7 +10,7 @@
 <head>
 <meta charset="UTF-8">
 <title>중복체크</title>
-<script src="script.js"></script>
+<script src="../script.js"></script>
 </head>
 <body>
 	<b><%=id %></b>

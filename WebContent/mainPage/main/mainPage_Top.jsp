@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>환영합니다</title>
-<link href="../css/myStyle.css" rel="stylesheet" type="text/css">
+<link href="../../css/myStyle.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<div id="main_top">

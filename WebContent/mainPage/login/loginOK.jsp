@@ -5,7 +5,7 @@
 <div id="main_nav">
 	<% if (loginID != null) {%>
 		<h3><%=loginID %> 님 환영합니다 &nbsp
-		<input type="button" value="로그아웃" class="btn_login btn_login_outline" onClick="location.href='logout.jsp'"/>
+		<input type="button" value="로그아웃" class="btn_login btn_login_outline" onClick="location.href='../login/logout.jsp'"/>
 		</h3>
 	<% } else {%>
 	<script>

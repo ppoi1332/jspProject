@@ -3,7 +3,7 @@
 <% String loginID2 = (String)session.getAttribute("loginID"); %>
 <%@ include file="mainPage_Top.jsp" %>
 <% if (loginID2 != null) {%>
-		<%@ include file="loginOK.jsp" %>
+		<%@ include file="../login/loginOK.jsp" %>
 	<% } else {%>
 	<%@ include file="mainPage_Nav.jsp" %>
 	<%} %>

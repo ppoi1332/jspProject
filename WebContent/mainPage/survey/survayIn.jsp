@@ -28,7 +28,7 @@
 	<hr color="gray" /> 
 	</div>
 	<div id = in_mid>
-		<h2><a href="main_Include.jsp" >메인화면으로 돌아가기</a></h2>
+		<h2><a href="../main/main_Include.jsp" >메인화면으로 돌아가기</a></h2>
 	</div>
 </body>
 </html>

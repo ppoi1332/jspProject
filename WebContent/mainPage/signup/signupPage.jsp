@@ -6,12 +6,12 @@
 <head>
 <meta charset="UTF-8">
 <title>회원가입</title>
-<link href="../css/myStyle.css" rel="stylesheet" type="text/css">
+<link href="../../css/myStyle.css" rel="stylesheet" type="text/css">
 <script src="script.js"></script>
 </head>
 <body>
 	<div id="signForm">
-		<form method="post" action="signupCheck.jsp" name="regForm">
+		<form method="post" action="../signup/signupCheck.jsp" name="regForm">
 			<fieldset  class="signForm_class">
 				<legend> 회원가입 </legend>
 				아이디 <br>
@@ -25,7 +25,7 @@
 				<br>
  				<input type="reset"  class="btn_login btn_login_outline" value="초기화" />
 				<input type="button" class="btn_login btn_login_outline" value="회원가입" onClick="inputCheck()"/>	
-				<button type="button"  class="btn_login btn_login_outline" onclick="location.href='main_Include.jsp'">&nbsp홈&nbsp</button>	
+				<button type="button"  class="btn_login btn_login_outline" onclick="location.href='../main/main_Include.jsp'">&nbsp홈&nbsp</button>	
 			</fieldset>
 		</form>
 	</div>

@@ -9,7 +9,7 @@
 <%
 	if (check == 1){
 		session.setAttribute("loginID", id);
-		response.sendRedirect("main_Include.jsp");
+		response.sendRedirect("../main/main_Include.jsp");
 	}
 	else if (check == 0){
 %>

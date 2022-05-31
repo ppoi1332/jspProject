@@ -72,6 +72,7 @@ function inputCheck() {
 }
 
 function loginCheck() {
+	location.href="../login/loginPage.jsp";
 	alert("로그인해주세요");
 }
 

@@ -30,11 +30,10 @@ a:active {
 	height:50px;
 	margin-top:10px;
 	text-align:right;
-
 }
 
 #main_mid{
-	height:500px;
+	height:300px;
 	width:100%;
 	margin:auto;
 	text-align:center;
@@ -122,7 +121,7 @@ fieldset{
     text-decoration: none;
     font-weight: 600;
     transition: 0.25s;
-    margin-top:100px;
+	margin-top:100px;
 }
 
 .mid_btn_outline {
@@ -143,8 +142,8 @@ fieldset{
     text-decoration: none;
     font-weight: 600;
     transition: 0.25s;
-    margin-left:100px;
-    margin-top:100px;
+    margin-left:65px;
+	margin-top:100px;
 }
 
 .check_btn_outline {
@@ -214,8 +213,83 @@ th, td {
 }
 
 th {
-	background-color : gray;
+		color:white;
+	background-color:#4b4d56;
+	color:whith
 }
 
+.filebox{
+	margin-top:30px;
+}
+
+.titlebox{
+	margin-top:30px;
+}
+
+.textbox{
+	margin-top:30px;
+}
+
+.submitbox{
+	text-align:left;
+	margin-top:30px;
+	margin-left:560px;
+}
+
+
+.filebox .upload-name {
+    display: inline-block;
+    height: 30px;
+    padding: 0 10px;
+    vertical-align: middle;
+    border: 1px solid #dddddd;
+    width: 78%;
+    color: #999999;
+}
+
+.filebox label {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius:10px;
+    vertical-align: middle;
+    background-color: #e7e7e7;
+    cursor: pointer;
+    height: 20px;
+    margin-left: 10px;
+    border: 1px solid #a3a1a1;
+    color: #6e6e6e;
+}
+
+.filebox label:hover {
+    background-color: #a3a1a1;
+    color: #e3dede;
+}
+
+
+.filebox input[type="file"] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+}
+
+.titlebox .title-name {
+    display: inline-block;
+    height: 30px;
+    padding: 0 10px;
+    vertical-align: middle;
+    border: 1px solid #dddddd;
+    width: 78%;
+    color: #999999;
+}
+
+.textbox .text-name {
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #dddddd;
+    color: #999999;
+}
 
 	
