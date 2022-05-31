@@ -1,5 +1,12 @@
+<%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@page import="javaBeans.FileDAO"%>
+<%@page import="javaBeans.FileVO"%>
+<% FileDAO dao = new FileDAO(); %>
+<% List<FileVO> lis = null; %>
+<% lis = dao.selectAll(); %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,6 +27,17 @@
 	<table border="1" align="center">
 	<tr>
 	<th width="80">번호</th><th>제목</th><th>파일 이름</th><th width="110">ID</th><th width="80">조회수</th>
+	<%if (lis != null) {%>
+		<%for(FileVO tmp : lis) {%>
+		<tr>
+			<h5><td><% out.print(tmp.getNumber()); %></td><td><a href="showboard.jsp?number=<%=tmp.getNumber()%>"><% out.print(tmp.getTitle()); %></a></td><td> <% out.print(tmp.getFile_Name()); %>
+			</td><td> <%out.print(tmp.getId()); %> </td><td><%out.print(tmp.getCount()); %></td>
+			</h5>
+		</tr>
+		<%}%>
+	<%} else { %>
+		<%out.println("인원이 없습니다"); %>
+	<%} %>
 	</tr>
 	</table>
 	<br><br>

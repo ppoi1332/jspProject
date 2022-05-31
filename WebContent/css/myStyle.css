@@ -213,9 +213,12 @@ th, td {
 }
 
 th {
-		color:white;
+	color:white;
 	background-color:#4b4d56;
-	color:whith
+}
+
+#th_show{
+	border-bottom: 1px solid white;
 }
 
 .filebox{
@@ -290,6 +293,19 @@ th {
     vertical-align: middle;
     border: 1px solid #dddddd;
     color: #999999;
+}
+
+#file_ok {
+	width:20%;
+	margin:auto;
+	margin-top:200px;
+	text-align:center;
+}
+
+#board_bottom{
+	width:50%;
+	margin-top:20px;
+	margin-left:680px;
 }
 
 	
